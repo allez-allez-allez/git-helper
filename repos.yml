@@ -1,0 +1,18 @@
+organization: plus3it
+local-path: repos
+branch-name: auto-merge 
+commit-message: Adds ability to auto approve and merge Dependabot PRs
+repos-configs-map:
+
+    # - name: terraform-aws-[pr]
+    #   config-file: terraform_pr.yml
+    #   repos:
+    #     - terraform-aws-watchmaker
+    #     - terraform-aws-wrangler
+
+    - name: terraform-aws-[Pull Request and Branch]
+      config-file: config/terraform_pull_request_branch.yml
+      repos:
+        - terraform-aws-codecommit-flow-ci
+        - terraform-aws-tardigrade-config-rules
+        
